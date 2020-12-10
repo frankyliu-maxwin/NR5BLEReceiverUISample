@@ -1,0 +1,6 @@
+framework module YumeAlamofire {
+  umbrella header "YumeAlamofire-umbrella.h"
+
+  export *
+  module * { export * }
+}

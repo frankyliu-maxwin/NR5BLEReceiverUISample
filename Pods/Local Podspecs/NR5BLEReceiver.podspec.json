@@ -1,0 +1,49 @@
+{
+  "name": "NR5BLEReceiver",
+  "version": "1.0.22",
+  "license": "MIT",
+  "summary": "...",
+  "homepage": "https://github.com/frankyliu-maxwin/NR5BLEReceiver",
+  "authors": {
+    "yume190": "yume190@gmail.com"
+  },
+  "social_media_url": "https://www.facebook.com/yume190",
+  "source": {
+    "git": "https://github.com/frankyliu-maxwin/NR5BLEReceiver.git",
+    "tag": "1.0.22"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "ios": {
+    "vendored_frameworks": [
+      "NR5BLEReceiver.framework",
+      "BLEData.framework"
+    ]
+  },
+  "swift_versions": "5.0",
+  "dependencies": {
+    "LayoutAnchor": [
+      "~> 4.2.0"
+    ],
+    "CStructDecodable": [
+      "~> 4.0.1"
+    ],
+    "YumeAlamofire/Rx": [
+      "5.0.5"
+    ],
+    "BigInt": [
+      "~> 4.0.0"
+    ],
+    "CryptoSwift": [
+      "~> 1.0.0"
+    ],
+    "Zip": [
+      "~> 1.1.0"
+    ],
+    "SwiftGraph": [
+      "~> 3.0.0"
+    ]
+  },
+  "swift_version": "5.0"
+}

@@ -1,0 +1,6 @@
+framework module BLEData {
+  umbrella header "BLEData.h"
+
+  export *
+  module * { export * }
+}

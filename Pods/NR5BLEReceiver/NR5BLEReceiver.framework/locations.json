@@ -1,0 +1,1035 @@
+[
+  {
+    "description": "南港系統-石碇",
+    "_id": 325,
+    "created_at": "2018-06-28T01:04:19.579Z",
+    "type": {
+      "_id": 1,
+      "name": "主線",
+      "id": 1
+    },
+    "origin_id": 365,
+    "name": "南港系統-石碇",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 0,
+    "tmileAge": 4000,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 325
+  },
+  {
+    "description": "石碇-南港系統",
+    "_id": 326,
+    "created_at": "2018-06-28T01:04:19.579Z",
+    "type": {
+      "_id": 1,
+      "name": "主線",
+      "id": 1
+    },
+    "origin_id": 366,
+    "name": "石碇-南港系統",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 4000,
+    "tmileAge": 0,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 326
+  },
+  {
+    "description": "石碇-坪林行控",
+    "_id": 327,
+    "created_at": "2018-06-28T01:04:19.560Z",
+    "type": {
+      "_id": 1,
+      "name": "主線",
+      "id": 1
+    },
+    "origin_id": 367,
+    "name": "石碇-坪林行控",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 4000,
+    "tmileAge": 14700,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 327
+  },
+  {
+    "description": "坪林行控-石碇",
+    "_id": 328,
+    "created_at": "2018-06-28T01:04:19.590Z",
+    "type": {
+      "_id": 1,
+      "name": "主線",
+      "id": 1
+    },
+    "origin_id": 368,
+    "name": "坪林行控-石碇",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 14700,
+    "tmileAge": 4000,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 328
+  },
+  {
+    "description": "坪林行控-頭城",
+    "_id": 329,
+    "created_at": "2018-06-28T01:04:19.592Z",
+    "type": {
+      "_id": 1,
+      "name": "主線",
+      "id": 1
+    },
+    "origin_id": 369,
+    "name": "坪林行控-頭城",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 14700,
+    "tmileAge": 30300,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 329
+  },
+  {
+    "description": "頭城-坪林行控",
+    "_id": 330,
+    "created_at": "2018-06-28T01:04:19.591Z",
+    "type": {
+      "_id": 1,
+      "name": "主線",
+      "id": 1
+    },
+    "origin_id": 370,
+    "name": "頭城-坪林行控",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 30300,
+    "tmileAge": 14700,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 330
+  },
+  {
+    "description": "頭城-宜蘭",
+    "_id": 331,
+    "created_at": "2018-06-28T01:04:19.593Z",
+    "type": {
+      "_id": 1,
+      "name": "主線",
+      "id": 1
+    },
+    "origin_id": 373,
+    "name": "頭城-宜蘭",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 30300,
+    "tmileAge": 38600,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 331
+  },
+  {
+    "description": "宜蘭-頭城",
+    "_id": 332,
+    "created_at": "2018-06-28T01:04:19.589Z",
+    "type": {
+      "_id": 1,
+      "name": "主線",
+      "id": 1
+    },
+    "origin_id": 374,
+    "name": "宜蘭-頭城",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 38600,
+    "tmileAge": 30300,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 332
+  },
+  {
+    "description": "宜蘭-羅東",
+    "_id": 333,
+    "created_at": "2018-06-28T01:04:19.591Z",
+    "type": {
+      "_id": 1,
+      "name": "主線",
+      "id": 1
+    },
+    "origin_id": 375,
+    "name": "宜蘭-羅東",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 38600,
+    "tmileAge": 46700,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 333
+  },
+  {
+    "description": "羅東-宜蘭",
+    "_id": 334,
+    "created_at": "2018-06-28T01:04:19.589Z",
+    "type": {
+      "_id": 1,
+      "name": "主線",
+      "id": 1
+    },
+    "origin_id": 376,
+    "name": "羅東-宜蘭",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 46700,
+    "tmileAge": 38600,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 334
+  },
+  {
+    "description": "羅東-蘇澳",
+    "_id": 335,
+    "created_at": "2018-06-28T01:04:19.592Z",
+    "type": {
+      "_id": 1,
+      "name": "主線",
+      "id": 1
+    },
+    "origin_id": 377,
+    "name": "羅東-蘇澳",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 46700,
+    "tmileAge": 54300,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 335
+  },
+  {
+    "description": "蘇澳-羅東",
+    "_id": 336,
+    "created_at": "2018-06-28T01:04:19.590Z",
+    "type": {
+      "_id": 1,
+      "name": "主線",
+      "id": 1
+    },
+    "origin_id": 378,
+    "name": "蘇澳-羅東",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 54300,
+    "tmileAge": 46700,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 336
+  },
+  {
+    "description": "蘇澳-海山西路-北向",
+    "_id": 2354,
+    "created_at": "2018-06-28T01:04:19.668Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80001,
+    "name": "蘇澳交流道_北上",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 54300,
+    "tmileAge": 54300,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2354
+  },
+  {
+    "description": "蘇澳-馬賽路-北向",
+    "_id": 2355,
+    "created_at": "2018-06-28T01:04:19.673Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80002,
+    "name": "蘇澳交流道_北上",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 54300,
+    "tmileAge": 54300,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2355
+  },
+  {
+    "description": "羅東-傳藝路-191甲-南向",
+    "_id": 2356,
+    "created_at": "2018-06-28T01:04:19.674Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80003,
+    "name": "羅東交流道_南下",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 46700,
+    "tmileAge": 46700,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2356
+  },
+  {
+    "description": "羅東-傳藝路-191甲-北向",
+    "_id": 2357,
+    "created_at": "2018-06-28T01:04:19.665Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80004,
+    "name": "羅東交流道_北上",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 46700,
+    "tmileAge": 46700,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2357
+  },
+  {
+    "description": "宜蘭-縣民大道-191甲-南向",
+    "_id": 2358,
+    "created_at": "2018-06-28T01:04:19.671Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80005,
+    "name": "宜蘭交流道_南下",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 38600,
+    "tmileAge": 38600,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2358
+  },
+  {
+    "description": "宜蘭-縣民大道-191甲-北向",
+    "_id": 2359,
+    "created_at": "2018-06-28T01:04:19.673Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80006,
+    "name": "宜蘭交流道_北上",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 38600,
+    "tmileAge": 38600,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2359
+  },
+  {
+    "description": "宜蘭-台7-191甲-南向",
+    "_id": 2360,
+    "created_at": "2018-06-28T01:04:19.664Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80007,
+    "name": "宜蘭交流道_南下",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 38600,
+    "tmileAge": 38600,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2360
+  },
+  {
+    "description": "宜蘭-台7-191甲-北向",
+    "_id": 2361,
+    "created_at": "2018-06-28T01:04:19.672Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80008,
+    "name": "宜蘭交流道_北上",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 38600,
+    "tmileAge": 38600,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2361
+  },
+  {
+    "description": "頭城-台9-礁溪-南向",
+    "_id": 2362,
+    "created_at": "2018-06-28T01:04:19.669Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80009,
+    "name": "頭城交流道_南下",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 30300,
+    "tmileAge": 30300,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2362
+  },
+  {
+    "description": "頭城-台9-礁溪-191-北向",
+    "_id": 2363,
+    "created_at": "2018-06-28T01:04:19.669Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80010,
+    "name": "頭城交流道_北上",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 30300,
+    "tmileAge": 30300,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2363
+  },
+  {
+    "description": "頭城-台2庚-南向",
+    "_id": 2364,
+    "created_at": "2018-06-28T01:04:19.667Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80011,
+    "name": "頭城交流道_南下",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 30300,
+    "tmileAge": 30300,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2364
+  },
+  {
+    "description": "頭城-台2庚-北向",
+    "_id": 2365,
+    "created_at": "2018-06-28T01:04:19.675Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80012,
+    "name": "頭城交流道_北上",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 30300,
+    "tmileAge": 30300,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2365
+  },
+  {
+    "description": "蘇澳-台2-北向",
+    "_id": 2366,
+    "created_at": "2018-06-28T01:04:19.672Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80013,
+    "name": "蘇澳交流道_北上",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 54300,
+    "tmileAge": 54300,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2366
+  },
+  {
+    "description": "坪林交流道-南向",
+    "_id": 2367,
+    "created_at": "2018-06-28T01:04:19.665Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80014,
+    "name": "坪林交流道_南下",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 14700,
+    "tmileAge": 14700,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2367
+  },
+  {
+    "description": "坪林交流道-北向",
+    "_id": 2368,
+    "created_at": "2018-06-28T01:04:19.667Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80015,
+    "name": "坪林交流道",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 14700,
+    "tmileAge": 14700,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2368
+  },
+  {
+    "description": "坪林-台9-坪林橋-南向",
+    "_id": 2369,
+    "created_at": "2018-06-28T01:04:19.668Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80016,
+    "name": "坪林交流道_南下",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 14700,
+    "tmileAge": 14700,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2369
+  },
+  {
+    "description": "坪林-台9-坪林橋-北向",
+    "_id": 2370,
+    "created_at": "2018-06-28T01:04:19.675Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80017,
+    "name": "坪林交流道_北上",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 14700,
+    "tmileAge": 14700,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2370
+  },
+  {
+    "description": "木柵-106乙-南向",
+    "_id": 2371,
+    "created_at": "2018-06-28T01:04:19.666Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80018,
+    "name": "石碇交流道_南下",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 4000,
+    "tmileAge": 4000,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2371
+  },
+  {
+    "description": "木柵-106乙-北向",
+    "_id": 2372,
+    "created_at": "2018-06-28T01:04:19.666Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80019,
+    "name": "石碇交流道_北上",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 4000,
+    "tmileAge": 4000,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2372
+  },
+  {
+    "description": "石碇-106乙-南向",
+    "_id": 2373,
+    "created_at": "2018-06-28T01:04:19.670Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80020,
+    "name": "石碇交流道_南下",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 4000,
+    "tmileAge": 4000,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2373
+  },
+  {
+    "description": "石碇-106乙-北向",
+    "_id": 2374,
+    "created_at": "2018-06-28T01:04:19.671Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80021,
+    "name": "石碇交流道_北上",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 1,
+    "fmileAge": 4000,
+    "tmileAge": 4000,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2374
+  },
+  {
+    "description": "南港系統",
+    "_id": 2375,
+    "created_at": "2018-06-28T01:04:19.663Z",
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "origin_id": 80022,
+    "name": "南港系統交流道",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "direction": 0,
+    "fmileAge": 0,
+    "tmileAge": 0,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "domain": "N",
+    "id": 2375
+  },
+  {
+    "description": "前導南向匝道出口",
+    "_id": 2376,
+    "created_at": "2018-07-04T09:23:15.683Z",
+    "name": "前導南向匝道出口",
+    "origin_id": 81001,
+    "type": {
+      "_id": 5,
+      "name": "平面路段-下匝道",
+      "id": 5
+    },
+    "direction": 0,
+    "fmileAge": 54000,
+    "tmileAge": 54000,
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "id": 2376
+  },
+  {
+    "description": "前導北向匝道出口",
+    "_id": 2377,
+    "created_at": "2018-07-04T09:24:15.397Z",
+    "name": "前導北向匝道出口",
+    "origin_id": 81002,
+    "type": {
+      "_id": 5,
+      "name": "平面路段-下匝道",
+      "id": 5
+    },
+    "direction": 1,
+    "fmileAge": 1,
+    "tmileAge": 1,
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "id": 2377
+  },
+  {
+    "description": "國3甲4k135",
+    "_id": 2378,
+    "created_at": "2018-08-21T06:17:42.069Z",
+    "freeway": {
+      "_id": 10050,
+      "name": "國5",
+      "code": 5,
+      "id": 10050
+    },
+    "fmileAge": 4135,
+    "name": "萬芳-木柵",
+    "origin_id": 80023,
+    "tmileAge": 4135,
+    "type": {
+      "_id": 4,
+      "name": "平面路段-上匝道",
+      "id": 4
+    },
+    "direction": 0,
+    "icType": {
+      "_id": 0,
+      "name": "一般交流道",
+      "id": 0
+    },
+    "id": 2378
+  }
+]

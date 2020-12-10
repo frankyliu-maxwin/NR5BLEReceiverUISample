@@ -1,0 +1,6 @@
+framework module Pods_NR5BLEReceiverUISample {
+  umbrella header "Pods-NR5BLEReceiverUISample-umbrella.h"
+
+  export *
+  module * { export * }
+}

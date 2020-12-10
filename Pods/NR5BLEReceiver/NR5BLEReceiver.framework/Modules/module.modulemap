@@ -1,0 +1,11 @@
+framework module NR5BLEReceiver {
+  umbrella header "NR5BLEReceiver.h"
+
+  export *
+  module * { export * }
+}
+
+module NR5BLEReceiver.Swift {
+    header "NR5BLEReceiver-Swift.h"
+    requires objc
+}

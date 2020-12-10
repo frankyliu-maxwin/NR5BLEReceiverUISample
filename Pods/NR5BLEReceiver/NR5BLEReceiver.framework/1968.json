@@ -1,0 +1,33 @@
+[
+    {
+        "messageType":1,
+        "pirority":0,
+        "directionOfTravel":0,
+        "freeText":"歡迎光臨2018宜蘭綠色博覽會"
+    },
+    {
+        "messageType":1,
+        "pirority":1,
+        "directionOfTravel":0,
+        "freeText":"自然橋經國5至頭城約22分"
+    },
+    {
+        "messageType":2,
+        "pirority":1,
+        "directionOfTravel":0,
+        "averageSpeed":86,
+        "levelOfServcie":3,
+        "travelDelay":24,
+        "freeText":"頭城-南港"
+    },
+    {
+    "messageType":3,
+    "pirority":1,
+    "directionOfTravel":0,
+    "roadSpeeds":[6,7,7,8,8,8,8,8,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],
+    "mileAge":35,
+    "prevEntryName":"宜蘭",
+    "nowEntryName":"頭城",
+    "NextEntryName":"坪林行控"
+    }
+]

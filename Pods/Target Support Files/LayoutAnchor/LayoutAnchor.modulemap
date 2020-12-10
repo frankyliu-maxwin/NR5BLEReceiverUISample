@@ -1,0 +1,6 @@
+framework module LayoutAnchor {
+  umbrella header "LayoutAnchor-umbrella.h"
+
+  export *
+  module * { export * }
+}

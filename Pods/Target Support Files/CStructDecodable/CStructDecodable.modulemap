@@ -1,0 +1,6 @@
+framework module CStructDecodable {
+  umbrella header "CStructDecodable-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,12 @@
+${PODS_ROOT}/Target Support Files/Pods-NR5BLEReceiverUISample/Pods-NR5BLEReceiverUISample-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework
+${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework
+${BUILT_PRODUCTS_DIR}/JSONDecodeKit/JSONDecodeKit.framework
+${BUILT_PRODUCTS_DIR}/LayoutAnchor/LayoutAnchor.framework
+${PODS_ROOT}/NR5BLEReceiver/NR5BLEReceiver.framework
+${PODS_ROOT}/NR5BLEReceiver/BLEData.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/SwiftGraph/SwiftGraph.framework
+${BUILT_PRODUCTS_DIR}/YumeAlamofire/YumeAlamofire.framework
+${BUILT_PRODUCTS_DIR}/Zip/Zip.framework

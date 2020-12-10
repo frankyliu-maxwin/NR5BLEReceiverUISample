@@ -1,0 +1,66 @@
+PODS:
+  - Alamofire (4.8.2)
+  - BigInt (4.0.0)
+  - CryptoSwift (1.0.0)
+  - CStructDecodable (4.0.1)
+  - JSONDecodeKit (5.0.0)
+  - LayoutAnchor (4.2.0)
+  - NR5BLEReceiver (1.0.22):
+    - BigInt (~> 4.0.0)
+    - CryptoSwift (~> 1.0.0)
+    - CStructDecodable (~> 4.0.1)
+    - LayoutAnchor (~> 4.2.0)
+    - SwiftGraph (~> 3.0.0)
+    - YumeAlamofire/Rx (= 5.0.5)
+    - Zip (~> 1.1.0)
+  - RxSwift (5.1.1)
+  - SwiftGraph (3.0.0)
+  - YumeAlamofire/Core (5.0.5):
+    - Alamofire (~> 4.8.0)
+    - JSONDecodeKit (~> 5.0)
+  - YumeAlamofire/Rx (5.0.5):
+    - RxSwift
+    - YumeAlamofire/Core
+  - Zip (1.1.0)
+
+DEPENDENCIES:
+  - NR5BLEReceiver (from `https://github.com/frankyliu-maxwin/NR5BLEReceiver`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BigInt
+    - CryptoSwift
+    - CStructDecodable
+    - JSONDecodeKit
+    - LayoutAnchor
+    - RxSwift
+    - SwiftGraph
+    - YumeAlamofire
+    - Zip
+
+EXTERNAL SOURCES:
+  NR5BLEReceiver:
+    :git: https://github.com/frankyliu-maxwin/NR5BLEReceiver
+
+CHECKOUT OPTIONS:
+  NR5BLEReceiver:
+    :commit: 34630dfe05b5d70026372fd7bf501b7ddf8ba382
+    :git: https://github.com/frankyliu-maxwin/NR5BLEReceiver
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  BigInt: 2aad1a9942dc932ec8b84290d2c564a3d76f97ab
+  CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
+  CStructDecodable: 8972db3b02d912e046f27e263d7ae3a145cc741b
+  JSONDecodeKit: 5a2e187bead8f848eb1cc99aaf2e2bdf08d84adf
+  LayoutAnchor: 48c408000678a4ead775ae2aae0466d5db8f96c8
+  NR5BLEReceiver: 18e6ca5058754bee7fc0dd7b05929f72bcca28d6
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SwiftGraph: 35298b3dab72887bc834b2e8d45295b870a87f42
+  YumeAlamofire: 6dd5aca3a93381f313f7581c4598f91c9c4cb583
+  Zip: 8877eede3dda76bcac281225c20e71c25270774c
+
+PODFILE CHECKSUM: faf82f73edea4f7443111577ded9de9520bba185
+
+COCOAPODS: 1.10.0

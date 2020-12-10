@@ -1,0 +1,414 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target x86_64-apple-ios9-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NR5BLEReceiver
+import AVFoundation
+import Alamofire
+import BLEData
+import BigInt
+import CoreBluetooth.CBUUID
+import CoreLocation.CLLocation
+import CStructDecodable
+import CoreBluetooth
+import CoreLocation
+import CryptoSwift
+import Foundation
+import JSONDecodeKit
+@_exported import NR5BLEReceiver
+import RxSwift
+import Swift
+import SwiftGraph
+import UIKit
+import YumeAlamofire
+import Zip
+public protocol WayDetector {
+  var azis: [Swift.Double] { get }
+}
+extension WayDetector {
+  public func range(in location: CoreLocation.CLLocation, deviation: Swift.Double) -> Swift.Bool
+  public func range(in course: Swift.Double, deviation: Swift.Double) -> Swift.Bool
+}
+extension Double : NR5BLEReceiver.WayDetector {
+  public var azis: [Swift.Double] {
+    get
+  }
+}
+extension BLEDecoder {
+  public struct Crypto {
+    public var isValidData: Swift.Bool {
+      get
+    }
+  }
+}
+extension BLEDecoder.Crypto : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension BLEDecoder {
+  public struct TCInfo {
+    public let bttcID: Swift.Int64
+    public var isJudgement: Swift.Bool {
+      get
+    }
+    public var coordinate: CoreLocation.CLLocationCoordinate2D? {
+      get
+    }
+    public var isBTG: Swift.Bool {
+      get
+    }
+    public enum Status {
+      case 主線
+      case 平面
+      case 下閘道
+      case 未啟用
+      case 未知
+      public static func == (a: NR5BLEReceiver.BLEDecoder.TCInfo.Status, b: NR5BLEReceiver.BLEDecoder.TCInfo.Status) -> Swift.Bool
+      public var hashValue: Swift.Int {
+        get
+      }
+      public func hash(into hasher: inout Swift.Hasher)
+    }
+    public var status: NR5BLEReceiver.BLEDecoder.TCInfo.Status {
+      get
+    }
+  }
+}
+extension BTInfo : CStructDecodable.Initable {
+  public func toHost(targetEndian: CoreFoundation.__CFByteOrder) -> BLEData.BTInfo
+}
+extension BLEDecoder.TCInfo : CStructDecodable.CStructDecodable {
+  public static func decode(data: Foundation.Data, targetEndian: CoreFoundation.__CFByteOrder, offset: Swift.Int) throws -> NR5BLEReceiver.BLEDecoder.TCInfo
+  public func toHost(targetEndian: CoreFoundation.__CFByteOrder) -> NR5BLEReceiver.BLEDecoder.TCInfo
+}
+extension BLEDecoder.TCInfo : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension GraphFilter {
+  public enum Guess : Swift.Equatable {
+    case initUnknown
+    case unknownNode
+    case notFindPath
+    case newNode
+    case south
+    case north
+    case both
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: NR5BLEReceiver.GraphFilter.Guess, b: NR5BLEReceiver.GraphFilter.Guess) -> Swift.Bool
+  }
+}
+@_hasMissingDesignatedInitializers public class BLEDecoder {
+  @objc deinit
+}
+extension BLEDecoder {
+  public struct Event {
+    public enum Piroity : Swift.UInt8 {
+      case 重大交通訊息
+      case 一般事件訊息
+      case 壅塞告警訊息
+      case 旅行時間訊息
+      case 交通宣導訊息
+      public typealias RawValue = Swift.UInt8
+      public init?(rawValue: Swift.UInt8)
+      public var rawValue: Swift.UInt8 {
+        get
+      }
+    }
+    public var text: Swift.String? {
+      get
+    }
+    public var pirority: Swift.Int {
+      get
+    }
+    public var pirorityType: NR5BLEReceiver.BLEDecoder.Event.Piroity? {
+      get
+    }
+    public var type: Swift.Int {
+      get
+    }
+  }
+}
+extension BTEvent : CStructDecodable.Initable {
+}
+extension BLEDecoder.Event : CStructDecodable.CStructDecodable {
+  public static func decode(data: Foundation.Data, targetEndian: CoreFoundation.__CFByteOrder, offset: Swift.Int) throws -> NR5BLEReceiver.BLEDecoder.Event
+  public func toHost(targetEndian: CoreFoundation.__CFByteOrder) -> NR5BLEReceiver.BLEDecoder.Event
+}
+extension BLEDecoder.Event : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Array where Element == NR5BLEReceiver.BLEDecoder.Event {
+  public func filter(piroities: [NR5BLEReceiver.BLEDecoder.Event.Piroity]) -> [Foundation.NSAttributedString]
+}
+extension NR5BLE {
+  public struct Result {
+    public let result: NR5BLEReceiver.BLEDecoder.DecodeResult
+    public let guess: NR5BLEReceiver.GraphFilter.Guess
+    public let location: CoreLocation.CLLocation
+    public let isDebug: Swift.Bool
+    public init(result: NR5BLEReceiver.BLEDecoder.DecodeResult, guess: NR5BLEReceiver.GraphFilter.Guess, location: CoreLocation.CLLocation = YumeLocationManager.default.latestLocation, isDebug: Swift.Bool = false)
+  }
+}
+extension GraphFilter {
+  public struct Path {
+  }
+}
+extension GraphFilter.Path : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public struct GraphFilter {
+  public static var defualt: NR5BLEReceiver.GraphFilter
+  public var fullPath: [Swift.String]
+  public var latest: (n: Swift.String, s: Swift.String)
+}
+extension BLEDecoder {
+  public struct DecodeSet {
+    public let uuid: CoreBluetooth.CBUUID
+    public var dictionary: [Swift.UInt8 : Foundation.Data] {
+      get
+    }
+    public init(uuid: CoreBluetooth.CBUUID)
+  }
+}
+extension BLEDecoder.DecodeSet {
+  public var isFull: Swift.Bool {
+    get
+  }
+}
+extension BLEDecoder.DecodeSet {
+  public var fullData: Foundation.Data? {
+    get
+  }
+}
+extension BLEDecoder.DecodeSet {
+  public func decode() throws -> NR5BLEReceiver.BLEDecoder.DecodeResult
+}
+extension BLEDecoder {
+  public struct DecodeResult {
+    public let uuid: CoreBluetooth.CBUUID
+    public let tcInfo: NR5BLEReceiver.BLEDecoder.TCInfo
+    public let crypto: NR5BLEReceiver.BLEDecoder.Crypto
+    public let roadSegment: NR5BLEReceiver.BLEDecoder.PushRoadSegmentSpeed?
+    public let travelTime: NR5BLEReceiver.BLEDecoder.TravelTime?
+    public let events: [NR5BLEReceiver.BLEDecoder.Event]
+    public let fullData: Foundation.Data
+    public let receiveTime: Foundation.Date
+    public func extra(events: [NR5BLEReceiver.BLEDecoder.Event]) -> NR5BLEReceiver.BLEDecoder.DecodeResult
+  }
+}
+extension BLEDecoder.DecodeResult : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension BLEDecoder.DecodeResult {
+  public var isMoveToScene3: Swift.Bool {
+    get
+  }
+  public var isMoveToScene2: Swift.Bool {
+    get
+  }
+}
+extension BLEDecoder.DecodeResult {
+  public struct Scene2Data {
+    public let title: Swift.String?
+    public let distance: Swift.String?
+    public let delay: Swift.String
+    public let scale: CoreGraphics.CGFloat
+  }
+  public var scene2Data: NR5BLEReceiver.BLEDecoder.DecodeResult.Scene2Data? {
+    get
+  }
+}
+extension BLEDecoder.DecodeResult {
+  public struct Scene3Data {
+    public let fromTo: Swift.String?
+    public let delay: Swift.String?
+    public let marks: [NR5BLEReceiver.RoadMark]
+  }
+  public var scene3Data: NR5BLEReceiver.BLEDecoder.DecodeResult.Scene3Data? {
+    get
+  }
+}
+extension BLEDecoder {
+  public struct PushRoadSegmentSpeed {
+  }
+}
+extension BTRoadSegment : CStructDecodable.Initable {
+}
+extension BLEDecoder.PushRoadSegmentSpeed : CStructDecodable.CStructDecodable {
+  public static func decode(data: Foundation.Data, targetEndian: CoreFoundation.__CFByteOrder, offset: Swift.Int) throws -> NR5BLEReceiver.BLEDecoder.PushRoadSegmentSpeed
+  public func toHost(targetEndian: CoreFoundation.__CFByteOrder) -> NR5BLEReceiver.BLEDecoder.PushRoadSegmentSpeed
+}
+extension BLEDecoder.PushRoadSegmentSpeed : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Entryable {
+  public var rxDataNetwork: RxSwift.Observable<YumeAlamofire.Response<Foundation.Data>> {
+    get
+  }
+}
+extension Entryable where Self.ResponseType : JSONDecodeKit.JSONDecodable {
+  public var rx: RxSwift.Observable<YumeAlamofire.Response<Self.ResponseType>> {
+    get
+  }
+  public var rxNetwork: RxSwift.Observable<YumeAlamofire.Response<Self.ResponseType>> {
+    get
+  }
+}
+extension Encodable {
+  public func dictionary(setting: (Foundation.JSONEncoder) -> Swift.Void = { _ in }) -> [Swift.String : Any]
+}
+public enum Engine {
+  public static var deviation: Swift.Double {
+    get
+  }
+  public static func change(deviation: Swift.Double)
+}
+public protocol Historible {
+  typealias Element = NR5BLEReceiver.NR5BLE.Result
+  var data: [Self.Element] { get }
+  func log(record: Self.Element)
+}
+public enum History {
+}
+extension Historible {
+  public var events: [(NR5BLEReceiver.BLEDecoder.Event, Foundation.Date)] {
+    get
+  }
+}
+extension BTOrderHeader : CStructDecodable.Initable {
+}
+extension BTOrderHeader : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+infix operator =~ : ComparisonPrecedence
+infix operator ==~ : ComparisonPrecedence
+public protocol NR5BLEReceiverFrameworkDelegate : AnyObject {
+  func receive(data: Swift.String)
+}
+public protocol NR5BLEReceiverMaxwinDelegate : AnyObject {
+  func receiveNewResult(data: NR5BLEReceiver.NR5BLE.Result)
+  func receiveNewResultDebug(data: NR5BLEReceiver.NR5BLE.Result)
+  func receiveNewBTGMessages(data: [NR5BLEReceiver.BLEDecoder.Event])
+  func btSetContentUpdate(from: CoreBluetooth.CBUUID, set: NR5BLEReceiver.BLEDecoder.DecodeSet)
+  func leaveGateway()
+}
+public protocol NR5BLEReceiverDelegate : NR5BLEReceiver.NR5BLEReceiverFrameworkDelegate, NR5BLEReceiver.NR5BLEReceiverMaxwinDelegate {
+}
+extension NR5BLEReceiverDelegate {
+  public func receive(data: Swift.String)
+  public func receiveNewResult(data: NR5BLEReceiver.NR5BLE.Result)
+  public func receiveNewBTGMessages(data: [NR5BLEReceiver.BLEDecoder.Event])
+  public func btSetContentUpdate(from: CoreBluetooth.CBUUID, set: NR5BLEReceiver.BLEDecoder.DecodeSet)
+  public func leaveGateway()
+  public func receiveNewResultDebug(data: NR5BLEReceiver.NR5BLE.Result)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class TTSFacade : ObjectiveC.NSObject {
+  public static let `default`: NR5BLEReceiver.TTSFacade
+  final public func canSpeak(text: Swift.String, enable: Swift.Bool = User.Config.ttsEnable)
+  final public func speak(text: Swift.String)
+  final public func speak(text: AVFoundation.AVSpeechUtterance)
+  @objc deinit
+}
+extension TTSFacade : AVFoundation.AVSpeechSynthesizerDelegate {
+  @objc final public func speechSynthesizer(_ synthesizer: AVFoundation.AVSpeechSynthesizer, didFinish utterance: AVFoundation.AVSpeechUtterance)
+}
+extension TTSFacade {
+  @discardableResult
+  final public func filter(data: NR5BLEReceiver.NR5BLE.Result?) -> [(text: Swift.String, enable: Swift.Bool)]
+  @discardableResult
+  final public func BTGMessageFilter(data: [NR5BLEReceiver.BLEDecoder.Event]) -> [Swift.String?]
+}
+public struct RoadMark {
+  public let location: Swift.Int
+  public let place: Swift.String
+  public let speeds: [Swift.Int]
+}
+public protocol YumeLocationManagerDelegate : AnyObject {
+  func locationUpdate(location: CoreLocation.CLLocation)
+}
+@objc @_inheritsConvenienceInitializers public class YumeLocationManager : ObjectiveC.NSObject {
+  public static let `default`: NR5BLEReceiver.YumeLocationManager
+  weak public var delegate: NR5BLEReceiver.YumeLocationManagerDelegate?
+  public var latestLocation: CoreLocation.CLLocation {
+    get
+  }
+  public func setup()
+  public func stopLocation()
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension YumeLocationManager : CoreLocation.CLLocationManagerDelegate {
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+}
+extension BLEDecoder {
+  public struct TravelTime {
+    public var travelDelay: Swift.Int {
+      get
+    }
+    public var text: Swift.String? {
+      get
+    }
+  }
+}
+extension BTTravelTime : CStructDecodable.Initable {
+}
+extension BTRoadPerformance : CStructDecodable.Initable {
+}
+extension BLEDecoder.TravelTime : CStructDecodable.CStructDecodable {
+  public static func decode(data: Foundation.Data, targetEndian: CoreFoundation.__CFByteOrder, offset: Swift.Int) throws -> NR5BLEReceiver.BLEDecoder.TravelTime
+  public func toHost(targetEndian: CoreFoundation.__CFByteOrder) -> NR5BLEReceiver.BLEDecoder.TravelTime
+}
+extension BLEDecoder.TravelTime : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public enum User {
+  public enum Config {
+    public static var ttsEnable: Swift.Bool
+  }
+}
+public enum NR5BLE {
+}
+extension NR5BLE {
+  @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class Receiver : ObjectiveC.NSObject {
+    public static let `default`: NR5BLEReceiver.NR5BLE.Receiver
+    final public var latestData: NR5BLEReceiver.NR5BLE.Result?
+    final public var history: NR5BLEReceiver.Historible
+    final public var debugHistory: NR5BLEReceiver.Historible
+    final public var delegate: NR5BLEReceiver.NR5BLEReceiverDelegate? {
+      get
+      set
+    }
+    @objc deinit
+  }
+}
+extension NR5BLE.Receiver {
+  final public func start(token: Swift.String)
+  final public func stop()
+}
+extension NR5BLE.Receiver {
+  final public func filter(piroities: [NR5BLEReceiver.BLEDecoder.Event.Piroity]) -> [(text: Swift.String?, date: Foundation.Date)]
+}
+public typealias UpdateHandler = (Swift.Bool) -> Swift.Void
+public func updateData(handler: NR5BLEReceiver.UpdateHandler? = nil)
+extension NR5BLEReceiver.BLEDecoder.TCInfo.Status : Swift.Equatable {}
+extension NR5BLEReceiver.BLEDecoder.TCInfo.Status : Swift.Hashable {}
+extension NR5BLEReceiver.GraphFilter.Guess : Swift.Hashable {}
+extension NR5BLEReceiver.BLEDecoder.Event.Piroity : Swift.Equatable {}
+extension NR5BLEReceiver.BLEDecoder.Event.Piroity : Swift.Hashable {}
+extension NR5BLEReceiver.BLEDecoder.Event.Piroity : Swift.RawRepresentable {}
